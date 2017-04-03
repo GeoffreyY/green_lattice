@@ -3,7 +3,7 @@
 var placeGreen = { //a variable that holds functions. I >3 javascript. /s
 
 	// semver convention
-	version: "v1.22",
+	version: "v1.23",
 
 	//Options (for what?)
     //
@@ -308,6 +308,137 @@ _________`.split("\n").slice(1)
 		tiles: Array(52).fill("_".repeat(38))
 	},
 
+	purple_n: {
+		xBase: 864,
+		yBase: 289,
+		width: 15,
+		height: 11,
+		tiles: `
+*****3****3*3**
+****3F3**3F3C3*
+***3FFF3*3FF3C3
+**3FFFFF33FFFC3
+**3FFFFFF3FCC3*
+*33FFFFFFCCFF3*
+3C3FFF3CCFFFF3*
+3C3FFCC3FFFFF3*
+*3CCCF3*3FFF3**
+**333F3**3F3***
+*****3****3****`.split("\n").slice(1)
+	},
+	
+	blue_spiral: {
+		xBase: 851,
+		yBase: 282,
+		width: 16,
+		height: 16,
+		tiles: `
+*******33*******
+******3DD3******
+*****3DCDD3*****
+****3DCCCDD3****
+***3DBBCDDDD3***
+**3DBBCDBBBDD3**
+*3DBBBDBBBBBDD3*
+3DBBBDDBBDDBBDD3
+3DDBBDDDBBDDBD3*
+*3DDBBDDCBDDD3**
+**3DDBCDBBDD3***
+***3DDCCBBD3****
+****3DDDDD3*****
+*****3DDD3******
+******3D3*******
+*******3********`.split("\n").slice(1)
+	},
+
+	character_1: {
+		xBase: 852,
+		yBase: 259,
+		width: 14,
+		height: 25,
+		tiles: `
+****3****3****
+***32333323***
+***32FFFF23***
+***3FFFFFF3***
+**3222FF2223**
+**3252222523**
+**3222552223**
+***323BB323***
+***35BBBB53***
+**3555555553**
+*365555555563*
+*366555555663*
+*366669966663*
+*36666FF66663*
+366666FF666663
+355666FF666553
+35555522555553
+355555FF555553
+35555522555553
+35555522555553
+35555522555553
+*355552255553*
+**3555225553**
+**3223333223**
+***33****33***`.split("\n").slice(1)
+	},
+
+	whale: {
+		xBase: 854,
+		yBase: 298,
+		width: 18,
+		height: 14,
+		tiles: `
+***B*B************
+**B*B*B***********
+****B*************
+******************
+**BBBBBB**********
+*BCCCCCCBB********
+BCCCCCCCCCB*******
+BCCCCCCCCCC****B*B
+BCC00CCCCCC****BBB
+BCC30CCCCCC****BBB
+BCCCCCCCCCCC****B*
+00000CCCCCCCC**BC*
+*0000CCB000CCCCC**
+*******B**********`.split("\n").slice(1)
+	},
+
+	green_player: {
+		xBase: 871,
+		yBase: 285,
+		width: 21,
+		height: 26,
+		tiles: `
+********3A9AA9AAA3***
+*******3A9999A99993**
+*******33A99AA9A99A3*
+******39999A99999A933
+******3399AAA9A9AA99A
+******39AA9A9A9AA9AA3
+*******37A769A76AA99A
+*******376666666A9AA3
+*******376666677A99AA
+*******3376663339AA93
+********3367337793A3*
+********3066630636A3*
+********37666666763**
+********37366666783**
+*********373776693***
+********3337666333***
+****3333222376670033*
+***388320006667000023
+**3383200002610020003
+*38837621002600020012
+*38366673000000002001
+*37666333200000003176
+*36673DC3320022223766
+3767533DC300000023366
+36633555D9A9A9A9A3766
+3662035333A9A9A9A7666`.split("\n").slice(1)
+	},
 
 	majora_mask: {
 		xBase: 924,
@@ -561,7 +692,12 @@ ___________________________________________________________
 		_this.art.push(_this.warframe);
 		_this.art.push(_this.skyrim);
 		_this.art.push(_this.daft_logo);
-		_this.art.push(_this.assorted_art_1);
+		//_this.art.push(_this.assorted_art_1);
+		_this.art.push(_this.purple_n);
+		_this.art.push(_this.blue_spiral);
+		_this.art.push(_this.character_1);
+		_this.art.push(_this.whale);
+		_this.art.push(_this.green_player);
 		_this.art.push(_this.assorted_art_2);
 
 		_this.wrongTiles = [];
