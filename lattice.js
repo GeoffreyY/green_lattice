@@ -385,25 +385,26 @@ _________`.split("\n").slice(1)
 	},
 
 	whale: {
-		xBase: 854,
-		yBase: 298,
-		width: 18,
-		height: 14,
+		xBase: 853,
+		yBase: 297,
+		width: 20,
+		height: 15,
 		tiles: `
-***B*B************
-**B*B*B***********
-****B*************
-******************
-**BBBBBB**********
-*BCCCCCCBB********
-BCCCCCCCCCB*******
-BCCCCCCCCCC****B*B
-BCC00CCCCCC****BBB
-BCC30CCCCCC****BBB
-BCCCCCCCCCCC****B*
-00000CCCCCCCC**BC*
-*0000CCB000CCCCC**
-*******B**********`.split("\n").slice(1)
+****3*3*************
+***3B3B3************
+**3B3B3B3***********
+***33B33************
+***333333***********
+**3BBBBBB33*********
+*3BCCCCCCBB3********
+3BCCCCCCCCCB3***3*3*
+3BCCCCCCCCCC3**3B3B3
+3BCC00CCCCCC3**3BBB3
+3BCC30CCCCCC3**3BBB3
+3BCCCCCCCCCCC3**3B3*
+300000CCCCCCCC33BC3*
+*30000CCB000CCCCC3**
+********B***********`.split("\n").slice(1)
 	},
 
 	green_player: {
