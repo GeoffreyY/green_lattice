@@ -507,6 +507,15 @@ ___________________________________________________________
 	},
 	//art ends here/
 
+	tesla: {
+		xBase: 859,
+		yBase: 197,
+		width: 51,
+		height: 19,
+		tiles: Array(19).fill("_".repeat(51))
+	},
+
+
     grape: {
         xBase: 947,
         yBase: 217,
@@ -700,6 +709,7 @@ ___________________________________________________________
 		_this.art.push(_this.whale);
 		_this.art.push(_this.green_player);
 		_this.art.push(_this.assorted_art_2);
+		_this.art.push(_this.tesla);
 
 		_this.wrongTiles = [];
 
