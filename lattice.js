@@ -3,12 +3,14 @@
 var placeGreen = { //a variable that holds functions. I >3 javascript. /s
 
 	// semver convention
-	version: "v1.15",
+	version: "v1.16",
 
 	//Options (for what?)
-	xBase: 896,
+    //
+    // invariants: xBase + width == 1000
+	xBase: 871,
 	yBase: 215,
-	width: 104,
+	width: 129,
 	height: 115,
 
 	get_color_name: function (color_number) { //0 is white. 3 is black.
