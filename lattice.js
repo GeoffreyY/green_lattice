@@ -3,7 +3,7 @@
 var placeGreen = { //a variable that holds functions. I >3 javascript. /s
 
 	// semver convention
-	version: "v1.25",
+	version: "v1.26",
 
 	//Options (for what?)
     //
@@ -393,9 +393,9 @@ _________`.split("\n").slice(1)
 ***3B3B3************
 **3B3B3B3***********
 ***33B33************
-**3333333***********
+*33333333***********
 *3BBBBBBB33*********
-3BBCCCCCCBB3********
+33BBBBBBB33*********
 3BCCCCCCCCCB3***3*3*
 3BCCCCCCCCCC3**3B3B3
 3BCC00CCCCCC3**3BBB3
