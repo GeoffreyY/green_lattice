@@ -222,9 +222,9 @@ _________`.split("\n").slice(1)
 
 	skyrim: {
 		xBase: 855,
-		yBase: 216,
+		yBase: 215,
 		width: 41,
-		height: 69,
+		height: 70,
 
         tiles: Array(69).fill("_".repeat(41)),
 
