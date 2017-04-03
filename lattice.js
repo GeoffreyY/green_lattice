@@ -213,7 +213,7 @@ _________`.split("\n").slice(1)
 1CCC0CC0CC00C00CC0CC0CCC1
 10C0C0C0C00CCC00C0C0C0C01
 100C0C0CC0CC0CC0CC0C0C001
-100C0C00_CC000CC_00C0C001
+100C0C00_CC0C0CC_00C0C001
 1000C0C000C000C000C0C0001
 1000CC0000000000000CC0001
 1111111111111111111111111`.split("\n").slice(1)
@@ -336,9 +336,9 @@ _________`.split("\n").slice(1)
 ******3DD33*****
 *****3DCDD33****
 ****3DCCCDD33***
-***3DBBCDDDD33**
+***3DBCCDDDD33**
 **3DBBCDBBBDD33*
-*3DBBBDBBBBBDD33
+*3DBBBDBBCBBDD33
 3DBBBDDBBDDBBDD3
 3DDBBDDDBBDDBD3*
 *3DDBBDDCBDDD3**
@@ -395,7 +395,7 @@ _________`.split("\n").slice(1)
 ***33B33************
 *33333333***********
 *3BBBBBBB33*********
-33BBBBBBB33*********
+33BBBBBBBB3*********
 3BCCCCCCCCCB3***3*3*
 3BCCCCCCCCCC3**3B3B3
 3BCC00CCCCCC3**3BBB3
@@ -423,7 +423,7 @@ _________`.split("\n").slice(1)
 *******376666677A99AA
 *******3376663339AA93
 ********3367337793A3*
-********3066630636A3*
+********3066306636A3*
 ********37666666763**
 ********37366666783**
 *********373776633***
@@ -442,11 +442,12 @@ _________`.split("\n").slice(1)
 
 	majora_mask: {
 		xBase: 924,
-		yBase: 296,
+		yBase: 295,
 		width: 59,
-		height: 57,
+		height: 58,
 		tiles: `
                  _                       _                 
+                ___                     ___                
                 ___                     ___                
                _____                   _____               
                _____                   _____               
@@ -505,6 +506,44 @@ ___________________________________________________________
                  __                      __                `.split("\n").slice(1)
 	},
 	//art ends here/
+
+	tesla: {
+		xBase: 859,
+		yBase: 197,
+		width: 51,
+		height: 19,
+		tiles: Array(19).fill("_".repeat(51))
+	},
+
+	starbound: {
+		xBase: 898,
+		yBase: 357,
+		width: 35,
+		height: 21,
+		tiles: `
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+C88CC8CCCCCCCCC8CCCCCCCCCCCCCCCCC8C
+C86C888CC88C88C88CC888C8C8C88CCC88C
+C68C686C868C86C868C868C8C8C868C868C
+C88CC8CC888C8CC888C888C888C8C8C888C
+C66CC6CC666C6CC666C666C666C6C6C666C
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCC888C888CCCCCCCCCCCCCC
+CCCCCCCCCCCCC8888C8888CCCCCCCCCCCCC
+CCCCCCCCCCCCC8888C8888CCCCCCCCCCCCC
+CCCCCCCCCCCCC8888C8888CCCCCCCCCCCCC
+CCCCCCCCCCCCC8886C6888CCCCCCCCCCCCC
+CCCCCC888888C888CCC888C888888CCCCCC
+CCCCCC688888C888CCC888C888886CCCCCC
+CCCCCCC68888C888CCC888C88886CCCCCCC
+CCCCCCCC6666C888CCC888C6666CCCCCCCC
+CCCCCCCCC888C888CCC888C888CCCCCCCCC
+CCCCCCCCC688C886CCC688C886CCCCCCCCC
+CCCCCCCCCC68C86CCCCC68C86CCCCCCCCCC
+CCCCCCCCCCC6C6CCCCCCC6C6CCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC`.split("\n").slice(1)
+	},
+
 
     grape: {
         xBase: 947,
@@ -699,6 +738,8 @@ ___________________________________________________________
 		_this.art.push(_this.whale);
 		_this.art.push(_this.green_player);
 		_this.art.push(_this.assorted_art_2);
+		_this.art.push(_this.tesla);
+		_this.art.push(_this.starbound);
 
 		_this.wrongTiles = [];
 
