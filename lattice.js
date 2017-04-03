@@ -442,11 +442,12 @@ _________`.split("\n").slice(1)
 
 	majora_mask: {
 		xBase: 924,
-		yBase: 296,
+		yBase: 295,
 		width: 59,
-		height: 57,
+		height: 58,
 		tiles: `
-                 _                       _                 
+				 _                       _                 
+				___                     ___                
                 ___                     ___                
                _____                   _____               
                _____                   _____               
