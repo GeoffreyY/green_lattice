@@ -220,8 +220,8 @@ _________`.split("\n").slice(1)
 	},
 
 	skyrim: {
-		xBase: 855,
-		yBase: 217,
+		xBase: 854,
+		yBase: 216,
 		width: 42,
 		height: 67,
 
