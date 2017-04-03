@@ -3,7 +3,7 @@
 var placeGreen = { //a variable that holds functions. I >3 javascript. /s
 
 	// semver convention
-	version: "v1.10",
+	version: "v1.11",
 
 	//Options (for what?)
 	xBase: 900,
@@ -419,7 +419,7 @@ ___________________________________________________________
 							_this.setLastColorPixel(x, y, targetColor);
 							//console.log("Drawing at (" + x + "," + y + "): " + get_color_name(targetColor));
 							_this.api.draw(x,y,targetColor);
-							window.setTimeout(function(){_this.drawOne()}, 5000);
+							window.setTimeout(function(){_this.drawOne()}, 1000);
 						} else {
 							//console.log("Redrawing");
 						}
@@ -430,7 +430,7 @@ ___________________________________________________________
 					// });
 				}
 			} else {
-				window.setTimeout(function(){_this.drawOne()}, timer + 5000);
+				window.setTimeout(function(){_this.drawOne()}, timer + 1000);
 				_this.timer.startTimer(timer + Date.now());
 				_this.timer.show();
 			}
