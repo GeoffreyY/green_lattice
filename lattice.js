@@ -594,7 +594,7 @@ ___________________________________________________________
 		//_this.art.push(_this.skyrim_logo);
         _this.art.push(_this.skyrim_logo_alt);
 		_this.art.push(_this.slime);
-		_this.art.push(_this.tlfower);
+		//_this.art.push(_this.tlfower);
 		_this.art.push(_this.owo);
 		_this.art.push(_this.warframe);
 		_this.art.push(_this.skyrim);
