@@ -81,7 +81,7 @@ var placeGreen = { //a variable that holds functions. I >3 javascript. /s
 		width: 24,
 		height: 17,
 		tiles: `
-**00000000000000000000*
+**000000000**000000000*
 *0022222220000F33333F00
 *0221111122006C33333C60
 00211111112006A33333A60
