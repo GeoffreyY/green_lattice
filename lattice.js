@@ -384,6 +384,28 @@ _________`.split("\n").slice(1)
 ***33****33***`.split("\n").slice(1)
 	},
 
+	whale: {
+		xBase: 854,
+		yBase: 298,
+		width: 18,
+		height: 14,
+		tiles: `
+***B*B************
+**B*B*B***********
+****B*************
+******************
+**BBBBBB**********
+*BCCCCCCBB********
+BCCCCCCCCCB*******
+BCCCCCCCCCC****B*B
+BCC00CCCCCC****BBB
+BCC30CCCCCC****BBB
+BCCCCCCCCCCC****B*
+00000CCCCCCCC**BC*
+*0000CCB000CCCCC**
+*******B**********`.split("\n").slice(1)
+	},
+
 
 	majora_mask: {
 		xBase: 924,
