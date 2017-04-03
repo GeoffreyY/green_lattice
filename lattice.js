@@ -535,7 +535,7 @@ ___________________________________________________________
 		});
 
 		window.setTimeout(function(){_this.drawOne()}, 3 * 1000);
-		window.setInterval(function(){_this.getWrongTiles()}, 30 * 1000);
+		window.setInterval(function(){_this.getWrongTiles()}, 10 * 1000);
 		_this.getWrongTiles();
 	},
 
