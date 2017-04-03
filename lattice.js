@@ -308,6 +308,25 @@ _________`.split("\n").slice(1)
 		tiles: Array(52).fill("_".repeat(38))
 	},
 
+	purple_n: {
+		xBase: 864,
+		yBase: 289,
+		width: 15,
+		height: 11,
+		tiles: `
+*****3****3*3**
+****3F3**3F3C3*
+***3FFF3*3FF3C3
+**3FFFFF33FFFC3
+**3FFFFFF3FCC3*
+*33FFFFFFCCFF3*
+3C3FFF3CCFFFF3*
+3C3FFCC3FFFFF3*
+*3CCCF3*3FFF3**
+**333F3**3F3***
+*****3****3****`.split("\n").slice(1)
+	},
+	
 
 	majora_mask: {
 		xBase: 924,
