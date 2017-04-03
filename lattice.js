@@ -3,7 +3,7 @@
 var placeGreen = { //a variable that holds functions. I >3 javascript. /s
 
 	// semver convention
-	version: "v1.20",
+	version: "v1.22",
 
 	//Options (for what?)
     //
@@ -81,7 +81,7 @@ var placeGreen = { //a variable that holds functions. I >3 javascript. /s
 		width: 24,
 		height: 17,
 		tiles: `
-**000000000**000000000*
+**00000000000000000000*
 *0022222220000F33333F00
 *0221111122006C33333C60
 00211111112006A33333A60
@@ -756,6 +756,7 @@ ___________________________________________________________
 		});
 
 		window.setTimeout(function(){_this.drawOne()}, 3 * 1000);
+        window.setInterval(function(){_this.drawOne()}, 30 * 1000);
 		window.setInterval(function(){_this.getWrongTiles()}, 10 * 1000);
 		_this.getWrongTiles();
 	},
