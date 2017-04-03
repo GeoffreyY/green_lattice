@@ -3,7 +3,7 @@
 var placeGreen = { //a variable that holds functions. I >3 javascript. /s
 
 	// semver convention
-	version: "v1.9",
+	version: "v1.10",
 
 	//Options (for what?)
 	xBase: 900,
@@ -391,6 +391,8 @@ ___________________________________________________________
 		this.api.getTimeToWait().then(function(timer) {
 
             if(isNaN(timer)) {
+                console.log('timer == NaN');
+                window.setTimeout(function(){_this.drawOne()}, 1000);
                 return;
             }
 
