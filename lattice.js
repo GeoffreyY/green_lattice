@@ -3,7 +3,7 @@
 var placeGreen = { //a variable that holds functions. I >3 javascript. /s
 
 	// semver convention
-	version: "v1.7",
+	version: "v1.8",
 
 	//Options (for what?)
 	xBase: 900,
@@ -54,7 +54,7 @@ var placeGreen = { //a variable that holds functions. I >3 javascript. /s
 	/*
 	Special Characters:
 		_:Do not paint over this square.
-		 :Is lattice. That is a space. 
+		 :Is lattice. That is a space.
 		*:Wildcard used in a peice when there may be possible overlap with another peice. Allows other art to write over that pixel. If there is no other art it defaults to lattice.
 	Colors: See above.
 
@@ -155,7 +155,7 @@ _______________`.split("\n").slice(1)
 707777077777777777770777777777777777
 777777777777777777777777777777777777`.split("\n").slice(1)
 	},
-	
+
 	slime: {
 		xBase: 894,
 		yBase: 215,
