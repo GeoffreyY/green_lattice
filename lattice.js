@@ -692,7 +692,12 @@ ___________________________________________________________
 		_this.art.push(_this.warframe);
 		_this.art.push(_this.skyrim);
 		_this.art.push(_this.daft_logo);
-		_this.art.push(_this.assorted_art_1);
+		//_this.art.push(_this.assorted_art_1);
+		_this.art.push(_this.purple_n);
+		_this.art.push(_this.blue_spiral);
+		_this.art.push(_this.character_1);
+		_this.art.push(_this.whale);
+		_this.art.push(_this.green_player);
 		_this.art.push(_this.assorted_art_2);
 
 		_this.wrongTiles = [];
