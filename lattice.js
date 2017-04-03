@@ -3,7 +3,7 @@
 var placeGreen = { //a variable that holds functions. I >3 javascript. /s
 
 	// semver convention
-	version: "v1.19",
+	version: "v1.20",
 
 	//Options (for what?)
     //
@@ -225,7 +225,10 @@ _________`.split("\n").slice(1)
 		yBase: 216,
 		width: 41,
 		height: 69,
-		tiles: `
+
+        tiles: Array(69).fill("_".repeat(41)),
+
+		tiles_old: `
 **********7732377777777773_2237**********
 **********73_23777777777773_237**********
 *********773_23777777777773_2377*********
