@@ -3,7 +3,7 @@
 var placeGreen = { //a variable that holds functions. I >3 javascript. /s
 
 	// semver convention
-	version: "v1.11",
+	version: "v1.12",
 
 	//Options (for what?)
 	xBase: 900,
@@ -301,7 +301,15 @@ ___________________________________________________________
                  __                      __                `.split("\n").slice(1)
 	},
 	//art ends here/
-	
+
+    grape: {
+        xBase: 947,
+        yBase: 217,
+        width: 20,
+        height: 16,
+        tiles: Array(16).fill("_".repeat(20))
+    },
+
 	bottom_left: { //the shields?
 		xBase: 871,
 		yBase: 311,
@@ -455,6 +463,7 @@ ___________________________________________________________
 	init: function() { //This is the first function fam. It starts everything.
 		var _this = this;
 		_this.art.push(_this.banner);
+        _this.art.push(_this.grape);
 		_this.art.push(_this.daft_punk_robot);
 		_this.art.push(_this.bottom_left);
 		_this.art.push(_this.majora_mask);
