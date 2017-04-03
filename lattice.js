@@ -3,7 +3,7 @@
 var placeGreen = { //a variable that holds functions. I >3 javascript. /s
 
 	// semver convention
-	version: "v1.22",
+	version: "v1.23",
 
 	//Options (for what?)
     //
