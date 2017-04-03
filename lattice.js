@@ -395,7 +395,7 @@ _________`.split("\n").slice(1)
 ***33B33************
 *33333333***********
 *3BBBBBBB33*********
-33BBBBBBB33*********
+33BBBBBBBB3*********
 3BCCCCCCCCCB3***3*3*
 3BCCCCCCCCCC3**3B3B3
 3BCC00CCCCCC3**3BBB3
