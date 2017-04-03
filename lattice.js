@@ -8,17 +8,10 @@ var placeGreen = { //a variable that holds functions. I >3 javascript. /s
 	//Options (for what?)
     //
     // invariants: xBase + width == 1000
-<<<<<<< HEAD
 	xBase: 851,
 	yBase: 215,
 	width: 149,
 	height: 115,
-=======
-	xBase: 892,
-	yBase: 214,
-	width: 108,
-	height: 116,
->>>>>>> refs/remotes/Expyron/master
 
 	get_color_name: function (color_number) { //0 is white. 3 is black.
 		switch(color_number) {
