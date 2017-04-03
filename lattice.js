@@ -355,7 +355,7 @@ _________`.split("\n").slice(1)
 		xBase: 852,
 		yBase: 259,
 		width: 14,
-		height: 15,
+		height: 25,
 		tiles: `
 ****3****3****
 ***32333323***
