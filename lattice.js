@@ -3,7 +3,7 @@
 var placeGreen = { //a variable that holds functions. I >3 javascript. /s
 
 	// semver convention
-	version: "v1.27",
+	version: "v1.28",
 
 	//Options (for what?)
     //
@@ -745,6 +745,7 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC`.split("\n").slice(1)
 
 		// set up info widgets
 
+        _this.setupShowExpectedColorToggle();
         _this.setupShouldRefreshToggle();
 		_this.setupShouldDrawToggle();
 		_this.setupBadTileToggle();
@@ -784,7 +785,64 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC`.split("\n").slice(1)
 						// _this.canvasse.ctx.fillStyle = my_gradient;
 
 						//this.canvasse.ctx.fillStyle = this.client.getPaletteColor(tile[3]);
-						_this.canvasse.ctx.fillStyle = 'red';
+
+                        if(_this.setting_show_expected_color) {
+                            switch(tile[2]) {
+                                case 0:
+                                    _this.canvasse.ctx.fillStyle = '#fff';
+                                    break;
+                                case 1:
+                                    _this.canvasse.ctx.fillStyle = '#E4E4E4';
+                                    break;
+                                case 2:
+                                    _this.canvasse.ctx.fillStyle = '#888888';
+                                    break;
+                                case 3:
+                                    _this.canvasse.ctx.fillStyle = '#222';
+                                    break;
+                                case 4:
+                                    _this.canvasse.ctx.fillStyle = '#FFA7D1';
+                                    break;
+                                case 5:
+                                    _this.canvasse.ctx.fillStyle = '#E50000';
+                                    break;
+                                case 6:
+                                    _this.canvasse.ctx.fillStyle = '#E59500';
+                                    break;
+                                case 7:
+                                    _this.canvasse.ctx.fillStyle = '#A06A42';
+                                    break;
+                                case 8:
+                                    _this.canvasse.ctx.fillStyle = '#E5D900';
+                                    break;
+                                case 9:
+                                    _this.canvasse.ctx.fillStyle = '#94E044';
+                                    break;
+                                case 10: //A
+                                    _this.canvasse.ctx.fillStyle = '#02BE01';
+                                    break;
+                                case 11: //B
+                                    _this.canvasse.ctx.fillStyle = '#00D3DD';
+                                    break;
+                                case 12: //C
+                                    _this.canvasse.ctx.fillStyle = '#0083C7';
+                                    break;
+                                case 13: //D
+                                    _this.canvasse.ctx.fillStyle = '#0000EA';
+                                    break;
+                                case 14: //E
+                                    _this.canvasse.ctx.fillStyle = '#CF6EE4';
+                                    break;
+                                case 15: //F
+                                    _this.canvasse.ctx.fillStyle = '#820080';
+                                    break;
+                                default:
+                                    _this.canvasse.ctx.fillStyle = 'red';
+                            }
+
+                        } else {
+                            _this.canvasse.ctx.fillStyle = 'red';
+                        }
 
 						_this.canvasse.ctx.fillRect(tile[0], tile[1], 1, 1);
 		            }
@@ -802,6 +860,30 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC`.split("\n").slice(1)
 		_this.getWrongTiles();
 	},
 
+    setupShowExpectedColorToggle: function() { //UI Element
+        _this = this;
+        var toolbar = document.getElementsByClassName('place-bottom-toolbar')[0];
+        var node = document.createElement("div");
+
+        node.classList.add("place-activity-count");
+
+        node.style.transform = "translate(-10px,-250px)";
+
+        node.innerHTML = "<label><input type='checkbox' name='setting_show_expected_color'  id='setting_show_expected_color' /> Show expected tile color<br/>(only when bad tiles enabled)</label>";
+
+        toolbar.appendChild(node);
+
+        var default_state = false;
+        _this.setting_show_expected_color = default_state;
+
+        var button = document.getElementById("setting_show_expected_color");
+        button.addEventListener("change", function() {
+            _this.setting_show_expected_color = !_this.setting_show_expected_color;
+        });
+
+        button.checked = default_state;
+    },
+
     setupShouldRefreshToggle: function() { //UI Element
         _this = this;
         var toolbar = document.getElementsByClassName('place-bottom-toolbar')[0];
@@ -811,7 +893,7 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC`.split("\n").slice(1)
 
         node.style.transform = "translate(-10px,-200px)";
 
-        node.innerHTML = "<label><input type='checkbox' name='setting_should_auto_refresh'  id='setting_should_auto_refresh' /> Should refresh after 30 mins (keep script fresh)</label>";
+        node.innerHTML = "<label><input type='checkbox' name='setting_should_auto_refresh'  id='setting_should_auto_refresh' /> Should refresh<br/>after 30 mins<br/>(keeps script fresh)</label>";
 
         toolbar.appendChild(node);
 
