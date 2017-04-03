@@ -3,15 +3,22 @@
 var placeGreen = { //a variable that holds functions. I >3 javascript. /s
 
 	// semver convention
-	version: "v1.23",
+	version: "v1.25",
 
 	//Options (for what?)
     //
     // invariants: xBase + width == 1000
+<<<<<<< HEAD
 	xBase: 851,
 	yBase: 215,
 	width: 149,
 	height: 115,
+=======
+	xBase: 892,
+	yBase: 214,
+	width: 108,
+	height: 116,
+>>>>>>> refs/remotes/Expyron/master
 
 	get_color_name: function (color_number) { //0 is white. 3 is black.
 		switch(color_number) {
@@ -99,7 +106,7 @@ var placeGreen = { //a variable that holds functions. I >3 javascript. /s
 ***0330330****0330330**
 ***0000000****0000000**`.split("\n").slice(1)
 	},
-	
+
 	daft_logo: {
 		xBase: 983,
 		yBase: 325,
@@ -142,9 +149,9 @@ _______________`.split("\n").slice(1)
 
 	slime: {
 		xBase: 894,
-		yBase: 215,
+		yBase: 216,
 		width: 28,
-		height: 17,
+		height: 16,
 		tiles: `
 __________________________**
 __________________________**
@@ -160,10 +167,9 @@ ____________________________
 ____________________________
 ____________________________
 ____________________________
-____________________________
 ____________________________`.split("\n").slice(1)
 	},
-	
+
 	tlfower: {
 		xBase: 911,
 		yBase: 211,
@@ -181,7 +187,7 @@ _________
 _________
 _________`.split("\n").slice(1)
 	},
-	
+
 	owo: {
 		xBase: 921,
 		yBase: 215,
@@ -196,7 +202,7 @@ _________`.split("\n").slice(1)
 344334443_344433443
 3_444444444444444_3`.split("\n").slice(1)
 	},
-	
+
 	warframe: {
 		xBase: 975,
 		yBase: 215,
@@ -326,7 +332,7 @@ _________`.split("\n").slice(1)
 **333F3**3F3***
 *****3****3****`.split("\n").slice(1)
 	},
-	
+
 	blue_spiral: {
 		xBase: 851,
 		yBase: 282,
