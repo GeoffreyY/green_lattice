@@ -327,6 +327,30 @@ _________`.split("\n").slice(1)
 *****3****3****`.split("\n").slice(1)
 	},
 	
+	blue_spiral: {
+		xBase: 851,
+		yBase: 282,
+		width: 16,
+		height: 16,
+		tiles: `
+*******33*******
+******3DD3******
+*****3DCDD3*****
+****3DCCCDD3****
+***3DBBCDDDD3***
+**3DBBCDBBBDD3**
+*3DBBBDBBBBBDD3*
+3DBBBDDBBDDBBDD3
+3DDBBDDDBBDDBD3*
+*3DDBBDDCBDDD3**
+**3DDBCDBBDD3***
+***3DDCCBBD3****
+****3DDDDD3*****
+*****3DDD3******
+******3D3*******
+*******3********`.split("\n").slice(1)
+	},
+
 
 	majora_mask: {
 		xBase: 924,
