@@ -468,6 +468,7 @@ ___________________________________________________________
 
 		// set up info widgets
 
+        _this.setupShouldRefreshToggle();
 		_this.setupShouldDrawToggle();
 		_this.setupBadTileToggle();
 		_this.setupBorderToggle();
@@ -522,6 +523,50 @@ ___________________________________________________________
 		window.setInterval(function(){_this.getWrongTiles()}, 30 * 1000);
 		_this.getWrongTiles();
 	},
+
+    setupShouldRefreshToggle: function() { //UI Element
+        _this = this;
+        var toolbar = document.getElementsByClassName('place-bottom-toolbar')[0];
+        var node = document.createElement("div");
+
+        node.classList.add("place-activity-count");
+
+        node.style.transform = "translate(-10px,-200px)";
+
+        node.innerHTML = "<label><input type='checkbox' name='setting_should_auto_refresh'  id='setting_should_auto_refresh' /> Should refresh after 30 mins (keep script fresh)</label>";
+
+        toolbar.appendChild(node);
+
+        var default_state = true;
+        _this.setting_should_auto_refresh = default_state;
+
+        var timeoutID = null;
+
+        function runRefresh() {
+            if(_this.setting_should_auto_refresh) {
+
+                timeoutID = setTimeout(function(){
+                    window.location.reload(false);
+                //  30 mins == 1800 seconds
+                }, 1800 * 1000);
+
+            } else {
+                window.clearTimeout(timeoutID);
+                timeoutID = null;
+            }
+        }
+
+        var button = document.getElementById("setting_should_auto_refresh");
+        button.addEventListener("change", function() {
+            _this.setting_should_auto_refresh = !_this.setting_should_auto_refresh;
+
+            runRefresh();
+        });
+
+        runRefresh();
+
+        button.checked = default_state;
+    },
 
 	setupShouldDrawToggle: function() { //UI Element
 		_this = this;
