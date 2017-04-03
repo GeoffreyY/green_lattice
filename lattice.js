@@ -333,12 +333,12 @@ _________`.split("\n").slice(1)
 		height: 16,
 		tiles: `
 *******33*******
-******3DD3******
-*****3DCDD3*****
-****3DCCCDD3****
-***3DBBCDDDD3***
-**3DBBCDBBBDD3**
-*3DBBBDBBBBBDD3*
+******3DD33*****
+*****3DCDD33****
+****3DCCCDD33***
+***3DBBCDDDD33**
+**3DBBCDBBBDD33*
+*3DBBBDBBBBBDD33
 3DBBBDDBBDDBBDD3
 3DDBBDDDBBDDBD3*
 *3DDBBDDCBDDD3**
