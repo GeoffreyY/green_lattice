@@ -3,7 +3,7 @@
 var placeGreen = { //a variable that holds functions. I >3 javascript. /s
 
 	// semver convention
-	version: "v1.21",
+	version: "v1.22",
 
 	//Options (for what?)
     //
@@ -620,6 +620,7 @@ ___________________________________________________________
 		});
 
 		window.setTimeout(function(){_this.drawOne()}, 3 * 1000);
+        window.setInterval(function(){_this.drawOne()}, 30 * 1000);
 		window.setInterval(function(){_this.getWrongTiles()}, 10 * 1000);
 		_this.getWrongTiles();
 	},
