@@ -8,10 +8,10 @@ var placeGreen = { //a variable that holds functions. I >3 javascript. /s
 	//Options (for what?)
     //
     // invariants: xBase + width == 1000
-	xBase: 892,
-	yBase: 214,
-	width: 108,
-	height: 116,
+	xBase: 851,
+	yBase: 215,
+	width: 149,
+	height: 115,
 
 	get_color_name: function (color_number) { //0 is white. 3 is black.
 		switch(color_number) {
@@ -81,7 +81,7 @@ var placeGreen = { //a variable that holds functions. I >3 javascript. /s
 		width: 24,
 		height: 17,
 		tiles: `
-**00000000000000000000*
+**000000000**000000000*
 *0022222220000F33333F00
 *0221111122006C33333C60
 00211111112006A33333A60
@@ -221,9 +221,9 @@ _________`.split("\n").slice(1)
 
 	skyrim: {
 		xBase: 855,
-		yBase: 216,
+		yBase: 215,
 		width: 41,
-		height: 69,
+		height: 70,
 
         tiles: Array(69).fill("_".repeat(41)),
 
@@ -333,12 +333,12 @@ _________`.split("\n").slice(1)
 		height: 16,
 		tiles: `
 *******33*******
-******3DD3******
-*****3DCDD3*****
-****3DCCCDD3****
-***3DBBCDDDD3***
-**3DBBCDBBBDD3**
-*3DBBBDBBBBBDD3*
+******3DD33*****
+*****3DCDD33****
+****3DCCCDD33***
+***3DBBCDDDD33**
+**3DBBCDBBBDD33*
+*3DBBBDBBBBBDD33
 3DBBBDDBBDDBBDD3
 3DDBBDDDBBDDBD3*
 *3DDBBDDCBDDD3**
@@ -384,25 +384,26 @@ _________`.split("\n").slice(1)
 	},
 
 	whale: {
-		xBase: 854,
-		yBase: 298,
-		width: 18,
-		height: 14,
+		xBase: 853,
+		yBase: 297,
+		width: 20,
+		height: 15,
 		tiles: `
-***B*B************
-**B*B*B***********
-****B*************
-******************
-**BBBBBB**********
-*BCCCCCCBB********
-BCCCCCCCCCB*******
-BCCCCCCCCCC****B*B
-BCC00CCCCCC****BBB
-BCC30CCCCCC****BBB
-BCCCCCCCCCCC****B*
-00000CCCCCCCC**BC*
-*0000CCB000CCCCC**
-*******B**********`.split("\n").slice(1)
+****3*3*************
+***3B3B3************
+**3B3B3B3***********
+***33B33************
+**3333333***********
+*3BBBBBBB33*********
+3BBCCCCCCBB3********
+3BCCCCCCCCCB3***3*3*
+3BCCCCCCCCCC3**3B3B3
+3BCC00CCCCCC3**3BBB3
+3BCC30CCCCCC3**3BBB3
+3BCCCCCCCCCCC3**3B3*
+300000CCCCCCCC33BC3*
+*30000CCB000CCCCC3**
+********B***********`.split("\n").slice(1)
 	},
 
 	green_player: {
@@ -412,8 +413,8 @@ BCCCCCCCCCCC****B*
 		height: 26,
 		tiles: `
 ********3A9AA9AAA3***
-*******3A9999A99993**
-*******33A99AA9A99A3*
+*******3A9A99A99993**
+*******3AA99AA9A99A3*
 ******39999A99999A933
 ******3399AAA9A9AA99A
 ******39AA9A9A9AA9AA3
@@ -425,7 +426,7 @@ BCCCCCCCCCCC****B*
 ********3066630636A3*
 ********37666666763**
 ********37366666783**
-*********373776693***
+*********373776633***
 ********3337666333***
 ****3333222376670033*
 ***388320006667000023
@@ -436,7 +437,7 @@ BCCCCCCCCCCC****B*
 *36673DC3320022223766
 3767533DC300000023366
 36633555D9A9A9A9A3766
-3662035333A9A9A9A7666`.split("\n").slice(1)
+3362035333A9A9A9A7666`.split("\n").slice(1)
 	},
 
 	majora_mask: {
