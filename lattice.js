@@ -438,6 +438,14 @@ ___________________________________________________________
 		tiles: Array(40).fill("_".repeat(65))
 	}, //Probably art.
 
+	assorted_art_2: { //flag + dude
+		xBase: 851,
+		yBase: 311,
+		width: 20,
+		height: 42,
+		tiles: Array(42).fill("_".repeat(20))
+	}, //Probably art?
+
 	getBackgroundLatticeColor: function (x,y) {
 		if (x % 2 == 1 && y % 2 == 1) {
 			if ((x+y) % 4 == 0) {
@@ -600,6 +608,7 @@ ___________________________________________________________
 		_this.art.push(_this.skyrim);
 		_this.art.push(_this.daft_logo);
 		_this.art.push(_this.assorted_art_1);
+		_this.art.push(_this.assorted_art_2);
 
 		_this.wrongTiles = [];
 
