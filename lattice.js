@@ -3,14 +3,14 @@
 var placeGreen = { //a variable that holds functions. I >3 javascript. /s
 
 	// semver convention
-	version: "v1.16",
+	version: "v1.20",
 
 	//Options (for what?)
     //
     // invariants: xBase + width == 1000
-	xBase: 871,
+	xBase: 892,
 	yBase: 215,
-	width: 129,
+	width: 108,
 	height: 115,
 
 	get_color_name: function (color_number) { //0 is white. 3 is black.
@@ -225,7 +225,10 @@ _________`.split("\n").slice(1)
 		yBase: 216,
 		width: 41,
 		height: 69,
-		tiles: `
+
+        tiles: Array(69).fill("_".repeat(41)),
+
+		tiles_old: `
 **********7732377777777773_2237**********
 **********73_23777777777773_237**********
 *********773_23777777777773_2377*********
@@ -505,10 +508,11 @@ ___________________________________________________________
 							_this.setLastColorPixel(x, y, targetColor);
 							//console.log("Drawing at (" + x + "," + y + "): " + get_color_name(targetColor));
 							_this.api.draw(x,y,targetColor);
-							window.setTimeout(function(){_this.drawOne()}, 1000);
 						} else {
 							//console.log("Redrawing");
 						}
+
+                        window.setTimeout(function(){_this.drawOne()}, 1000);
 					});
 					// .catch(function(e) {
 					//   console.error(e);
@@ -516,8 +520,8 @@ ___________________________________________________________
 					// });
 				} else {
                     // nothing to draw, wait two seconds
-                    console.log('nothing to draw, wait two seconds');
-                    window.setTimeout(function(){_this.drawOne()}, 2000);
+                    console.log('nothing to draw, wait one second');
+                    window.setTimeout(function(){_this.drawOne()}, 1000);
                 }
 			} else {
 				window.setTimeout(function(){_this.drawOne()}, timer + 1000);
