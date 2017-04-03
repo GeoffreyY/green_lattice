@@ -8,9 +8,9 @@ var placeGreen = { //a variable that holds functions. I >3 javascript. /s
 	//Options (for what?)
     //
     // invariants: xBase + width == 1000
-	xBase: 871,
+	xBase: 892,
 	yBase: 215,
-	width: 129,
+	width: 108,
 	height: 115,
 
 	get_color_name: function (color_number) { //0 is white. 3 is black.
